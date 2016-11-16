@@ -21,8 +21,8 @@ namespace Vidly.Controllers
         {
             return new List<Movie>
             {
-                new Movie { Id = 1, Name = "Shrek!"},
-                new Movie { Id = 2, Name = "Antz!"}
+                //new Movie { Id = 1, Name = "Shrek!"},
+                //new Movie { Id = 2, Name = "Antz!"}
             };
         }
 
@@ -31,7 +31,8 @@ namespace Vidly.Controllers
             var movie = GetMovies().SingleOrDefault(x => x.Id == id);
             return View(movie);
         }
-        
+      
+
         // GET: Movies/Random
         public ActionResult Random()
         {

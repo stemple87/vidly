@@ -9,13 +9,5 @@ namespace Vidly.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-
-
-        public static List<Customer> customerList = new List<Customer> { };
-
-        public List<Customer> GetList()
-        {
-            return customerList;
-        }
     }
 }
