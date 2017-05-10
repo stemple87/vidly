@@ -7,4 +7,13 @@
 
 <h2>Customer Details</h2>
 @Model.Name
-@Model.Id
+<br />
+@{
+    if (Model.Birthday == null)
+    {
+        <p>No birthday listed.</p>
+    }
+    else {
+        <p>@Model.Birthday</p>
+    }
+}
