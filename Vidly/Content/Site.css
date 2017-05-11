@@ -26,3 +26,14 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*My CSS*/
+
+table tr:nth-child(even) {
+    background-color: #FFF
+
+}
+table tr:nth-child(odd) {
+    background-color: #f3f1f1
+
+}

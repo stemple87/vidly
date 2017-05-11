@@ -12,13 +12,17 @@
 <table class="table">
     <tr>
         <th>Movie</th>
+        <th>Genre</th>
     </tr>
+    <tr>
     @foreach (var movie in Model)
     {
 
-        <tr><td>@Html.ActionLink(movie.Name, "Details", "Movies", new { id = movie.Id }, null)</td></tr>
-        <tr>@movie.Genre.Name</tr>
+        
+        <td>@Html.ActionLink(movie.Name, "Details", "Movies", new { id = movie.Id }, null)</td>
+        <td>@movie.Genre.Name</td>
     }
+    </tr>
 
 </table>
 }
