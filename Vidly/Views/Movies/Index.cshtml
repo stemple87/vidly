@@ -17,7 +17,9 @@
     {
 
         <tr><td>@Html.ActionLink(movie.Name, "Details", "Movies", new { id = movie.Id }, null)</td></tr>
+        <tr>@movie.Genre.Name</tr>
     }
+
 </table>
 }
 else
